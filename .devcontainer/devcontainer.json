@@ -1,0 +1,16 @@
+{
+  "name": "Minecraft Server - w2211",
+  "image": "openjdk:17-slim",
+  "features": {},
+  "postCreateCommand": "chmod +x start.sh",
+  "postStartCommand": "./start.sh",
+  "forwardPorts": [
+    25565
+  ],
+  "portsAttributes": {
+    "25565": {
+      "label": "Minecraft Server",
+      "onAutoForward": "notify"
+    }
+  }
+}
